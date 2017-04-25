@@ -139,9 +139,37 @@ body {
     padding: 4px 10px;
 }
 
+#issue-user-box {
+    padding-top: 10px;
+}
+
+#issue-user-box img {
+    width: 100px;
+    height: 100px;
+}
+
+#issue-user-box #user-data {
+    padding: 20px;
+}
+
+#issue-correspondence img {
+    width: 100px;
+    height: 100px;
+}
+
+#issue-correspondence .user-data {
+    width: 100px;
+    height: 100px;
+}
+
 @media only screen and (max-width: 1000px) {
     #user-image img {
         display: block;
         margin: 0 auto;
     }
+
+    #issue-correspondence .user-data {
+        display: inline-block;
+    }
+
 }
