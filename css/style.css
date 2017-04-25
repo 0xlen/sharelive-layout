@@ -1,6 +1,12 @@
 body {
     padding-top: 50px;
     background: #fbe9d6;
+    font-size: 16px;
+
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    animation-duration: 4s;
+    animation-delay: 2s;
 }
 
 .navbar-header, .navbar-inverse, .navbar-collapse {
@@ -48,6 +54,56 @@ body {
 .media-object {
     height: 64px;
     width: 64px;
+}
+
+#bills .panel-body {
+    background: #f7f1e7;
+}
+
+#bills .panel-body .dl-horizontal dt,
+#bills .panel-body .dl-horizontal dt {
+    margin-bottom: 10px;
+}
+
+#bills .panel, #bill-selector {
+    box-shadow:5px 5px 2px rgba(136, 136, 136, 0.1);
+    border-radius: 5px;
+    background: #fff;
+}
+
+#bills .panel,
+#bills #bill-selector > .panel > .panel-body {
+    background: #fff;
+}
+
+#bills .panel-default > .panel-heading,
+#bills .panel-default > .panel-footer {
+    background: #fff;
+}
+
+#bills .btn.btn-success {
+    background: #32b16c;
+    border-radius: 10px;
+    width: 105px;
+    height: 45px;
+    font-size: 16px;
+}
+
+#bills #bill-item .panel-default > .panel-heading {
+    border-color: #7d7575;
+}
+
+#bills #bill-selector li {
+    list-style: none;
+}
+
+#bills #bill-selector .panel-body > li.active:before,
+#bills #bill-selector .panel-body > li:hover:before {
+    content: "\2588";
+    padding-right: 8px;
+    margin-left: -3px;
+    color: #32b16c;
+    transition: all 0.4s;
 }
 
 @media only screen and (max-width: 1000px) {

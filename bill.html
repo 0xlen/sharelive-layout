@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/favicon.ico">
+
+        <title>ShareLive</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/sharelive.png" id="logo"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right" id="navbar">
+                        <li><a href="#"><img src="images/bulletin_w.png" class="nav-icon" data-hover="images/bulletin.png" data-init="images/bulletin_w.png"></a></li>
+                        <li><a href="#"><img src="images/bill_w.png" class="nav-icon" data-hover="images/bill.png" data-init="images/bill_w.png"></a></li>
+                        <li><a href="#"><img src="images/message_w.png" class="nav-icon" data-hover="images/message.png" data-init="images/message_w.png"></a></li>
+
+
+                        <!-- Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How Lemon <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li><!-- /Dropdown -->
+
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container" id="bills">
+
+            <h2>帳單</h2>
+
+            <div class="col-md-3">
+                <button class="btn btn-success">新增帳單</button>
+            </div>
+
+            <div class="col-md-9">
+                <div class="text-right">
+                    <h3>YYYY年MM月</h3>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="panel-group" id="bill-selector">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"></h4>
+                        </div>
+
+                        <div class="panel-body">
+                            <li class="active">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#bill-2016">2016</a>
+                                <div id="bill-2016" class="panel-collapse collapse in">
+                                    <ul>
+                                        <a href="###" v-on:click="">
+                                            <li>
+                                                一月
+                                                <ul class="panel-collapse collapse in">
+                                                    <a href="###" v-on:click="showBills(20160101)"><li>20160101</li></a>
+                                                    <a href="###" v-on:click=""><li>20160102</li></a>
+                                                    <a href="###" v-on:click=""><li>20160103</li></a>
+                                                </ul>
+                                            </li>
+                                        </a>
+                                        <a href="###" v-on:click=""><li>二月</li></a>
+                                        <a href="###" v-on:click=""><li>三月</li></a>
+                                        <a href="###" v-on:click=""><li>四月</li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>2017</li>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-9" id="bill-item">
+                <bill-item v-for="bill in bills" :bill="bill" :bill_link="bill_link"></bill-item>
+            </div>
+
+        </div><!-- /.container -->
+
+        <footer>
+            <p class="text-center">&copy; 2017 ShareLive</p>
+        </footer>
+
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/navbar.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+            <!-- Vue.js -->
+            <script src="dist/build.js"></script>
+    </body>
+</html>
