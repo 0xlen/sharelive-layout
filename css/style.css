@@ -106,6 +106,26 @@ body {
     transition: all 0.4s;
 }
 
+.mainpage-bg-image {
+    background-image: url(../images/house.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 20px;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    color: #fff;
+    height: 340px;
+    padding: 15px 0 0 15px;
+}
+
+.title {
+    font-size: 26px;
+}
+
 @media only screen and (max-width: 1000px) {
     #user-image img {
         display: block;
