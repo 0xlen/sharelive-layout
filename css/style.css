@@ -139,6 +139,18 @@ body {
     width: 80px;
 }
 
+#newbill label {
+    text-align: right;
+}
+
+#newbill .align {
+    text-align: center;
+}
+
+#newbill .margin {
+    margin-top: 2px;
+}
+
 #issue-user-box {
     padding-top: 10px;
 }
@@ -167,9 +179,7 @@ body {
         display: block;
         margin: 0 auto;
     }
-
     #issue-correspondence .user-data {
         display: inline-block;
     }
-
 }
