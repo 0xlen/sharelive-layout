@@ -1,6 +1,6 @@
 body {
-  padding-top: 50px;
-  background: #fbe9d6;
+    padding-top: 50px;
+    background: #fbe9d6;
 }
 
 .navbar-header, .navbar-inverse, .navbar-collapse {
@@ -33,4 +33,26 @@ body {
 .icon-message:hover {
     background: url('../images/message-w.png');
     background-size: cover;
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+}
+
+#user-image img {
+    height: 170px;
+    width:: 170px;
+}
+
+.media-object {
+    height: 64px;
+    width: 64px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #user-image img {
+        display: block;
+        margin: 0 auto;
+    }
 }
