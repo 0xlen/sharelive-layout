@@ -61,26 +61,60 @@
     <div class="container" id="news">
         <div class="row">
             <div class="col-md-12">
-                <h2>公告</h2>
-                <a class="btn btn-primary btn-lg" href="#" role="button">新增公告</a>
+                <h2>最新消息</h2>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+        				<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+     				</span>
+                </div>
+                <!-- /input-group -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        日期新舊
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">日期新舊</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-default glyphicon glyphicon-repeat" id="btn"></button>
+            </div>
+            <div class="col-md-8">
+                <button class="btn btn-default glyphicon glyphicon-trash" id="btn"></button>
+            </div>
+            <div class="col-md-2">
+                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                    <button type="button" class="btn btn-default glyphicon glyphicon-menu-left" id="btn"></button>
+                    <button type="button" class="btn btn-default glyphicon glyphicon-menu-right" id="btn"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="panel panel-default" id="table">
                     <!-- Default panel contents -->
                     <!-- Table -->
                     <table class="table">
-                        <thead>
-                            <th>標題</th>
-                            <th>張貼者</th>
-                            <th>張貼時間</th>
-                            <th>操作</th>
-                        </thead>
                         <tbody>
                             <tr>
-                                <td>asdf</td>
-                                <td>howlemon</td>
-                                <td>2017-04-25 20:34</td>
                                 <td>
-                                    <a class="btn btn-primary btn-lg" id="btn" href="#" role="button">查看</a>
+                                    <input type="checkbox" aria-label="...">
                                 </td>
+                                <td>sender</td>
+                                <td>message title</td>
+                                <td class="glyphicon glyphicon-comment"></td>
+                                <td>Date/Time</td>
                             </tr>
                         </tbody>
                     </table>
@@ -88,6 +122,14 @@
             </div>
         </div>
     </div>
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>

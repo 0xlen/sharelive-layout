@@ -136,7 +136,7 @@ body {
 
 #news #btn {
     font-size: 14px;
-    padding: 4px 10px;
+    width: 80px;
 }
 
 #issue-user-box {
