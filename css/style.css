@@ -136,10 +136,10 @@ body {
 
 #news #btn {
     font-size: 14px;
-    padding: 4px 10px;
+    width: 80px;
 }
 
-@media only screen and (max-width: 1000px) {
+# @media only screen and (max-width: 1000px) {
     #user-image img {
         display: block;
         margin: 0 auto;
