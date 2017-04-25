@@ -174,6 +174,49 @@ body {
     height: 100px;
 }
 
+#user-personal-data {
+    background: brown;
+    padding: 70px 50px 50px 50px;
+    color: #eee;
+}
+
+#user-personal-data h2 {
+    padding-left: 55px;
+}
+
+
+#user-personal-data dl dt,
+#user-personal-data dl dt {
+    margin-bottom: 10px;
+}
+
+#user-personal-room {
+    background: #fff;
+    padding: 35px;
+}
+
+#user-personal-room .media {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#user-personal-room .media:nth-child(1) {
+    background: pink;
+}
+
+#user-personal-room .media .media-heading {
+    font-weight: bold;
+}
+
+#user-personal-room .media .media-object {
+    margin: 10px;
+}
+
+
+footer {
+    padding-top: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
     #user-image img {
         display: block;
