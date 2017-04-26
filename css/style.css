@@ -162,12 +162,9 @@ body {
     text-align: right;
 }
 
-#newbill .align {
-    text-align: center;
-}
-
 #newbill .margin {
-    margin-top: 2px;
+    margin: 15px 0 0 0;
+    display: flex;
 }
 
 #issue-user-box {
