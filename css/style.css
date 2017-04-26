@@ -23,6 +23,10 @@ body {
     margin-bottom: 20px;
 }
 
+#graph {
+    height: 300px;
+}
+
 .navbar-header,
 .navbar-inverse,
 .navbar-collapse {
