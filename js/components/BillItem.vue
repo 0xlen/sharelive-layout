@@ -30,7 +30,7 @@
       </dl>
     </div>
     <div class="panel-footer">
-      <button :data-link="bill_link + '/' + bill.id" class="btn btn-success">帳單明細</button>
+      <button :data-link="bill.html" onclick="javscript:window.location='bill-detail.html';" class="btn btn-success">帳單明細</button>
     </div>
   </div>
 </div>
