@@ -87,7 +87,7 @@
                                         <a href="###">
                                             <li>
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#bill-201601">
-                                                一月
+                                                    一月
                                                 </a>
                                                 <ul class="panel-collapse collapse in" id="bill-201601">
                                                     <a href="###" v-on:click="showBills(20160101)"><li>20160101</li></a>
@@ -99,7 +99,7 @@
                                         <a href="###">
                                             <li>
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#bill-201602">
-                                                二月
+                                                    二月
                                                 </a>
                                                 <ul class="panel-collapse collapse" id="bill-201602">
                                                     <a href="###" v-on:click="showBills(20160201)"><li>20160201</li></a>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="col-md-9" id="bill-item">
-                <bill-item v-for="bill in bills" :bill="bill" :bill_link="h"></bill-item>
+                <bill-item v-for="bill in bills" :bill="bill"></bill-item>
             </div>
 
         </div><!-- /.container -->
@@ -214,4 +214,21 @@
             </div>
         </div>
     </div>
+
+    <div id="loading" class="modal fade"></div>
+
+    <style>
+        #loading.modal.in {
+            position:   fixed;
+            z-index:    1000;
+            top:        0;
+            left:       0;
+            height:     100%;
+            width:      100%;
+            background: rgba( 255, 255, 255, .8 )
+                url('images/loading.gif')
+                50% 50%
+                no-repeat;
+        }
+    </style>
 </html>
