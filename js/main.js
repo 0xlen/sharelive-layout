@@ -11,9 +11,11 @@ new Vue({
     methods: {
         showBills: function(bill_id) {
             var self = this;
+            $('#loading.modal').fadeIn(200).addClass('in').fadeOut();
             $.get("data/" + bill_id + '.json', function(data) {
                 self.bills = data;
             });
+
         }
     }
 });
