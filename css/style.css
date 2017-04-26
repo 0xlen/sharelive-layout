@@ -188,6 +188,11 @@ body {
     height: 100px;
 }
 
+#issue-correspondence #reply textarea {
+    resize: none;
+    overflow: hidden;
+}
+
 #issue-correspondence .user-data {
     width: 100px;
     height: 100px;

@@ -117,8 +117,7 @@
                         </div>
 
                         <div class="tab-pane" id="issue-correspondence">
-                            <button class="btn btn-default pull-right">回覆</button>
-
+                            <button class="btn btn-default pull-right" name="reply">回覆</button>
                             <div class="row">
                                 <div class="col-md-4">
                                     <img src="images/bob.jpg" alt="Bob" class="img-rounded">
@@ -154,6 +153,18 @@
                                     <p class="text-muted text-right">2016-09-01 20:10:11</p>
                                 </div>
                             </div>
+
+
+                            <form class="form-horizontal hide" role="form" id="reply">
+                                <div class="form-group">
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" onkeyup="auto_grow(this)" name="description"></textarea>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button class="btn btn-primary btn-lg btn-block">送出</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
                         <div class="tab-pane" id="log">
@@ -259,6 +270,8 @@
             <script src="js/navbar.js"></script>
             <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
             <script src="js/ie10-viewport-bug-workaround.js"></script>
+            <script src="js/autogrow.js"></script>
+            <script src="js/issue.js"></script>
     </body>
 
     <div class="modal fade" id="issue-form" tabindex="-1" role="dialog" aria-labelledby="issue-form">
