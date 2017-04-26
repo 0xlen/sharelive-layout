@@ -156,6 +156,24 @@ body {
 #news #btn {
     font-size: 14px;
     width: 80px;
+    margin-top: -1px;
+    padding: 6px 0;
+    margin-left: 12px;
+}
+
+#news #search {
+    margin-top: -1px;
+}
+
+#news #page {
+    float: right;
+}
+
+#news #page button {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -1px;
+    padding: 4px 6px;
 }
 
 #newbill label {
@@ -200,7 +218,6 @@ body {
     padding-left: 55px;
 }
 
-
 #user-personal-data dl dt,
 #user-personal-data dl dt {
     margin-bottom: 10px;
@@ -227,7 +244,6 @@ body {
 #user-personal-room .media .media-object {
     margin: 10px;
 }
-
 
 footer {
     padding-top: 20px;
