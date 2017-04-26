@@ -64,7 +64,7 @@
             <h2>帳單</h2>
 
             <div class="col-md-3">
-                <button class="btn btn-success">新增帳單</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-bill">新增帳單</button>
             </div>
 
             <div class="col-md-9">
@@ -133,4 +133,67 @@
             <!-- Vue.js -->
             <script src="dist/build.js"></script>
     </body>
+
+
+    <div class="modal fade" id="create-bill" tabindex="-1" role="dialog" aria-labelledby="create-bill">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">新增帳單</h4>
+                </div>
+                <div class="modal-body">
+
+
+                    <form class="form-horizontal" role="form" class="newbill">
+                        <div class="form-group">
+                            <label class="col-md-4">房屋</label>
+                            <div class="col-md-8">
+                                <select type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                    <option>港宅</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label class="col-md-4 margin" >付款人</label>
+                            <div class="col-md-8">
+                                <select type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                    <option>如何檸檬</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4" >計費起始日期</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4" >計費結算日期</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4" >繳費截止日期</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4" >備註</label>
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="note"></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
